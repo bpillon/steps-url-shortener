@@ -1,0 +1,29 @@
+title: URL Shortener
+summary: |-
+  Shorten the specified url.
+description: |-
+  Shorten the specified url with Tinyurl.
+website: https://github.com/bpillon/steps-url-shortener
+source_code_url: https://github.com/bpillon/steps-url-shortener
+support_url: https://github.com/bpillon/steps-url-shortener/issues
+host_os_tags:
+  - "ubuntu"
+type_tags:
+  - url
+  - shortener
+is_requires_admin_user: false
+is_always_run: false
+is_skippable: false
+inputs:
+  - long_url: $BITRISE_PUBLIC_INSTALL_PAGE_URL
+    opts:
+      title: "Long url"
+      description: |
+        Long url to shorten
+outputs:
+  - SHORTEN_URL: ""
+    opts:
+      title: "Shorten URL"
+      summary: "Shorten URL by Tinyurl"
+      description: |-
+        This output will include the URL shorten.
